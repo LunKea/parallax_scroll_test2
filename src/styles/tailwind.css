@@ -1,0 +1,51 @@
+@import 'tailwindcss';
+
+/* import 'Alpine' from 'alpinejs' */
+
+
+
+@plugin '@tailwindcss/typography';
+@plugin '@tailwindcss/forms';
+@import "tailwindcss-animated";
+@import "tailwindcss-intersect";
+
+@theme {
+  /* Removes defaules tailwindss color palettes */
+  --color-*: initial; 
+
+    /* Add variables / tokens */
+  --color-green-500: #45DF31;
+  --color-green-250: #576F54;
+
+  --color-white--500: #FFFFFF;
+  --color-white--250: #DDDDDD;
+  --color-white--100: #9B9A9F;
+
+}
+
+@theme inline {  
+  /* Tokens */
+  --color-primary: var(--color-green-500);
+  --color-secondary: var(--color-green-250);
+
+  --
+
+}
+
+
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+}
+
+@layer components{
+
+}
+@layer utilities{
+  
+}

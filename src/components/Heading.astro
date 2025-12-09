@@ -1,0 +1,26 @@
+---
+const {
+  htmlheading = "h2",
+  size = "medium",
+  font = "Paytone-One",
+  stylingclasses = "",
+} = Astro.props;
+const Htmlheading = htmlheading;
+
+// Define size classes with responsive Tailwind
+const sizeClasses = {
+  xlarge: "text-[18px] md:text-[32px] lg:text-[116px]",
+  large: "text-[16px] md:text-[25px] lg:text-[96px]",
+  medium: "text-[17px] md:text-[22px] lg:text-[36px]",
+  small: "text-[20px] md:text-[20px] lg:text-[25px]",
+};
+
+const fontClasses = {
+  "Paytone-One": "font-main",
+  Nunito: "font-body",
+};
+---
+
+<Htmlheading class:list={[sizeClasses[size], fontClasses[font], stylingclasses]}
+  ><slot /></Htmlheading
+>
