@@ -4,103 +4,43 @@ import Button from "../components/Button.astro";
 import Link from "../components/Link.astro";
 // import { Image } from "astro:assets";
 // import thumbsup from "../assets/images/thumbsup.png";
+import AnimateA from "./AnimateA.astro";
 ---
 
 <MainLayout title="Titel">
-  <section class="wrapper">
-    <h1>Page Not Found...</h1>
 
-    <div class="text" id="text-1">
-      <h1>Scroll more!</h1>
-    </div>
+<!-- <AnimateA /> -->
 
-    <div class="text" id="text-2">
-      <h1>Scroll a bit more...</h1>
-    </div>
-
-    <div class="text" id="text-3">
-      <h1>Almost there...</h1>
+  <section class="mb-150">
+    <div class="bg-red-500 w-10 h-10 text-center place-content-center a">
+      <p>a</p>
     </div>
   </section>
 
-  <section class="outro">
-    <h1>You made it out of here!</h1>
+  <section class="mb-150">
+    <div class="bg-green-500 w-10 h-10 text-center place-content-center b">
+      <p>b</p>
+    </div>
   </section>
+
+    <section class="mb-150">
+    <div class="bg-blue-500 w-10 h-10 text-center place-content-center c">
+      <p>c</p>
+    </div>
+  </section>
+
+  <script is:inline type="module" src="/src/pages/script.js"></script>
 </MainLayout>
 
-<style>
-  section {
-    width: 100%;
-    height: 100%;
-    overflow-x: hidden;
-    background: black;
-  }
+<!-- <script is:inline type="module">
+  import { gsap } from "gsap";
 
-  .text {
-    overflow: hidden;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+  gsap.to(".a", {
+    x: 400,
+    rotation: 360,
+    duration: 6,
+    scale: 2,
+  });
+</script> -->
 
-  #text-1 {
-    top: 50%;
-    left: 20%;
-  }
 
-  #text-2 {
-    top: 25%;
-    left: 40%;
-  }
-
-  #text-3 {
-    top: 45%;
-    left: 60%;
-  }
-
-  .outro {
-    position: absolute;
-    top: 150vh;
-    width: 100%;
-    height: 100vh;
-
-    h1 {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: max-content;
-      font-size: 40px;
-      font-weight: lighter;
-      text-align: center;
-    }
-  }
-
-  h1 {
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 20px;
-    width: 100%;
-    font-size: 48vw;
-    font-weight: 400;
-    text-align: center;
-    margin: 0%;
-  }
-
-  .wrapper {
-    position: absolute;
-    top: 0;
-    width: 400vw;
-    height: 100vh;
-    will-change: transform;
-  }
-</style>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
-></script>
-<script
-  src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
-></script>
-<script src="/main.js" is:inline></script>
-<script src="/script.js" is:inline></script>

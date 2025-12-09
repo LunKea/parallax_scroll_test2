@@ -11,7 +11,7 @@
 
 @theme {
   /* Removes defaules tailwindss color palettes */
-  --color-*: initial; 
+  /* --color-*: initial;  */
 
     /* Add variables / tokens */
   --color-green-500: #45DF31;
