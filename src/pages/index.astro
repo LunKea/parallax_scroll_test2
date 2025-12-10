@@ -7,25 +7,31 @@ import Link from "../components/Link.astro";
 ---
 
 <MainLayout title="Titel">
+  <section class="flex flex-row gap-10 m-50 mt-450">
+    <section class="">
+      <div
+        class="bg-red-500 w-10 h-10 text-center place-content-center a opacity-0"
+      >
+        <p>a</p>
+      </div>
+    </section>
 
-  <section class="mb-150">
-    <div class="bg-red-500 w-10 h-10 text-center place-content-center a">
-      <p>a</p>
-    </div>
-  </section>
+    <section class="">
+      <div
+        class="bg-green-500 w-10 h-10 text-center place-content-center b opacity-0"
+      >
+        <p>b</p>
+      </div>
+    </section>
 
-  <section class="mb-200">
-    <div class="bg-green-500 w-10 h-10 text-center place-content-center b">
-      <p>b</p>
-    </div>
-  </section>
-
-    <section class="mb-150">
-    <div class="bg-blue-500 w-10 h-10 text-center place-content-center c">
-      <p>c</p>
-    </div>
+    <section class="">
+      <div
+        class="bg-blue-500 w-10 h-10 text-center place-content-center c opacity-0"
+      >
+        <p>c</p>
+      </div>
+    </section>
   </section>
 
   <script is:inline type="module" src="/src/pages/script.js"></script>
 </MainLayout>
-
