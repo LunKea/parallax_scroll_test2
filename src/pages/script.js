@@ -5,7 +5,7 @@ gsap.registerPlugin(ScrollTrigger);
 gsap.to(".c", {
   scrollTrigger: {
     trigger: ".c",
-    toggleActions: "restart none none none",
+    toggleActions: "restart none reverse none",
   },
   x: 1400,
   rotation: 360,
